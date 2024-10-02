@@ -29,6 +29,7 @@ const MainMenu = props => {
 
   const menu = [
     { type: ITEM, key: '/dashboard', title: <><HomeIcon /><span>Tổng quan</span></> },
+    { type: ITEM, key: '/booking', title: <><HomeIcon /><span>Đặt lịch</span></> },
     // {
     //   type: SUB_MENU, key: "/opportunity", title: <span><HomeIcon /><span>Cơ hội</span></span>, permission: ROLE_FUNCTION.menu_opportunity, children: [
     //     {

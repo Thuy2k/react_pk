@@ -6,7 +6,7 @@ import RouteLayout from '../Layout/RouteLayout';
 import AdminLayout from '../Layout/AdminLayout';
 import DashboardPage from '../Pages/DashboardPage';
 import LoginPage from '../Pages/LoginPage';
-
+import BookingPage from '../Pages/BookingPage';
 
 class AppRouter extends React.Component {
   render() {
@@ -17,6 +17,11 @@ class AppRouter extends React.Component {
         <Route element={<AdminLayout />}>
           <Route element={<DashboardPage />} path="/dashboard" />
         </Route>
+
+        <Route element={<AdminLayout />}>
+          <Route element={<BookingPage />} path="/booking" />
+        </Route>
+        
        
         {/* <Route element={<LoginLayout />}>
           <Route element={<LoginPage />} path="/" />

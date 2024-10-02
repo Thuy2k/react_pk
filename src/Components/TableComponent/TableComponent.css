@@ -1,0 +1,60 @@
+Style cho container của table .custom-table-container {
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style cho table */
+.custom-table .ant-table {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Style cho header */
+.custom-table .ant-table-thead>tr>th {
+    background-color: #1890ff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+}
+
+/* Style cho row */
+.custom-table .ant-table-tbody>tr>td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Hover row */
+.custom-table .ant-table-tbody>tr:hover>td {
+    background-color: #e6f7ff;
+}
+
+/* Style cho pagination */
+.custom-table .ant-pagination-item {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1890ff;
+    color: white;
+    margin-right: 8px;
+}
+
+.custom-table .ant-pagination-item-active {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+/* Style cho nút chuyển trang */
+.custom-table .ant-pagination-next,
+.custom-table .ant-pagination-prev {
+    background-color: #1890ff;
+    border-radius: 50%;
+    color: white;
+}

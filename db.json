@@ -1,0 +1,67 @@
+{
+  "bookings": [
+    {
+      "date": "2024-10-03",
+      "time": "09:00",
+      "service": "Massages",
+      "customer": "Alice Johnson",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "date": "2024-10-04",
+      "time": "02:00 PM",
+      "service": "Pedicure",
+      "customer": "Bob Brown"
+    },
+    {
+      "id": "5",
+      "date": "2024-10-05",
+      "time": "01:00 PM",
+      "service": "Facial",
+      "customer": "Charlie White"
+    },
+    {
+      "id": "f979",
+      "date": "2024-10-09",
+      "time": "17:59",
+      "service": "teww",
+      "customer": "ew"
+    },
+    {
+      "id": "f90f",
+      "date": "2024-10-10",
+      "time": "17:11",
+      "service": "e",
+      "customer": "te"
+    },
+    {
+      "id": "6059",
+      "date": "2024-10-09",
+      "time": "16:16",
+      "service": "ew",
+      "customer": "utwe"
+    },
+    {
+      "id": "8e18",
+      "date": "2024-10-09",
+      "time": "00:03",
+      "service": "e",
+      "customer": "te"
+    },
+    {
+      "id": "4bab",
+      "date": "2024-10-03",
+      "time": "01:05",
+      "service": "tê",
+      "customer": "tét"
+    },
+    {
+      "id": "6181",
+      "date": "2024-10-10",
+      "time": "02:03",
+      "service": "e",
+      "customer": "te"
+    }
+  ]
+}
