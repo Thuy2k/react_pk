@@ -11,7 +11,11 @@ const BookingPage = props => {
   const [error, setError] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
   const [editingBooking, setEditingBooking] = useState(null);
+
+  const [checkAddOrEdit, setCheckAddOrEdit] = useState('add'); // 'add' hoặc 'edit'
   const [form] = Form.useForm(); // Sử dụng form từ antd
+
+
 
   useEffect(() => {
     fetchBookings();
@@ -42,7 +46,7 @@ const BookingPage = props => {
         customer: values.customer,
       };
 
-      if (editingBooking) {
+      if (editingBooking && checkAddOrEdit === 'edit') {
         // Cập nhật thông tin đặt chỗ hiện tại
         await axios.put(`http://localhost:3001/bookings/${editingBooking.id}`, bookingData);
         message.success('Booking updated successfully!');
@@ -66,6 +70,7 @@ const BookingPage = props => {
   const openModal = (booking = null) => {
     setEditingBooking(booking);
     if (booking) {
+      setCheckAddOrEdit('edit'); // Đang chỉnh sửa
       // Nếu có booking, điền vào form
       form.setFieldsValue({
         date: booking.date ? moment(booking.date) : null,
@@ -74,6 +79,7 @@ const BookingPage = props => {
         customer: booking.customer,
       });
     } else {
+      setCheckAddOrEdit('add'); // Đang thêm mới
       // Nếu không có booking, đặt lại form
       form.resetFields();
     }
@@ -119,7 +125,7 @@ const BookingPage = props => {
 
   return (
     <React.Fragment>
-       <div>
+      <div>
         <Button type="primary" onClick={() => openModal(null)} className="add-booking-button">Add Booking</Button>
         <TableComponent columns={columns} data={listBook} />
 
