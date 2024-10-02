@@ -1,0 +1,255 @@
+/* Container để điều chỉnh kích thước bảng */
+.table-container {
+    width: 80%;
+    margin: 50px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Phong cách cho bảng */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Định dạng cho phần tiêu đề bảng */
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Định dạng cho các hàng của bảng */
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  /* Hiệu ứng hover cho các hàng */
+  .styled-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #f3f3f3;
+  }
+  
+  /* Các hàng xen kẽ có màu nền khác nhau */
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Căn giữa các ô dữ liệu */
+  .styled-table tbody td {
+    text-align: center;
+  }
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;  /* Căn giữa nội dung của thẻ th */
+    font-weight: bold;
+  }
+
+  /* Phong cách cho nút thêm bản ghi */
+.add-button {
+  background-color: #009879;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #007f66;
+}
+
+/* Phong cách cho popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.popup-content button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup-content button:first-of-type {
+  background-color: #009879;
+  color: white;
+}
+
+.popup-content button:last-of-type {
+  background-color: #ccc;
+}
+
+.popup-content button:first-of-type:hover {
+  background-color: #007f66;
+}
+
+.popup-content button:last-of-type:hover {
+  background-color: #aaa;
+}
+
+
+
+/* --------- surww ban ghi------- */
+/* Phong cách cho nút thêm bản ghi */
+.add-button {
+  background-color: #009879;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #007f66;
+}
+
+/* Phong cách cho nút sửa */
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Phong cách cho popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.popup-content button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup-content button:first-of-type {
+  background-color: #009879;
+  color: white;
+}
+
+.popup-content button:last-of-type {
+  background-color: #ccc;
+}
+
+.popup-content button:first-of-type:hover {
+  background-color: #007f66;
+}
+
+.popup-content button:last-of-type:hover {
+  background-color: #aaa;
+}
+/* ------------end sua ban ghi-------- */
+
+/* -----------nút xóa------ */
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}

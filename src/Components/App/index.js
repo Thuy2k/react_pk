@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import AppRouter from '../../Routes/index';
-
+import { BookingProvider } from "../../Provider/BookingProvider";
 // const authConfig = {
 //   url: '',
 //   auth: {
@@ -13,9 +13,11 @@ import AppRouter from '../../Routes/index';
 
 const App = () => {
   return (
-    <Router basename="/">
-      <AppRouter />
-    </Router>
+    <BookingProvider>
+      <Router basename="/">
+        <AppRouter />
+      </Router>
+    </BookingProvider>
   );
 };
 
